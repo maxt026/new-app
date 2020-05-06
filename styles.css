@@ -1,0 +1,57 @@
+.App {
+  text-align: center;
+}
+
+* {
+  margin: 0;
+  padding: 2px;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+.body {
+  background-color: rgb(121, 119, 119);
+  width: 100%;
+}
+
+#logo-abr {
+  float: left;
+  color: red;
+  border: 1px;
+  font-weight: bold;
+}
+
+#logo-abr2 {
+  font-style: italic;
+  font-weight: bold;
+}
+
+.main-container {
+  display: grid;
+  grid-template-rows: 34px auto auto;
+  grid-template-columns: 85% auto;
+  padding: 8px;
+}
+
+.search-bar {
+  background-color: #dbdbdb;
+  margin-top: 7px;
+  padding: 12px;
+  color: black;
+  outline: medium;
+  display: flex;
+  justify-content: space-between;
+}
+
+.column {
+  display: flex;
+}
+
+.channel-property {
+  color: black;
+  font-style: italic;
+}
+
+.result {
+  font-size: 16px;
+}
