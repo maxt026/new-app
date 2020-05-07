@@ -1,7 +1,8 @@
 import { useState, useEffect } from "react";
 
-const Weather = () => {
-  const [weather, setWeather] = useState("");
+const WindSp = () => {
+  const [windSpeed, setWindSpeed] = useState('');
+
 
   useEffect(() => {
     fetch(
@@ -9,11 +10,14 @@ const Weather = () => {
     )
       .then(response => response.json())
       .then(data => {
-        const value = data.weather[0].description;
-        setWeather(value);
+        const windSpeed = Math.round(data.wind.speed*10)/10 + ' m/s';
+       
+        setWindSpeed(windSpeed);
       });
   });
-  return weather;
+  return windSpeed;
 };
 
-export default Weather;
+export default WindSp;
+
+

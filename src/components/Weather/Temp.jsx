@@ -9,9 +9,8 @@ const Temp = () => {
     )
       .then(response => response.json())
       .then(data => {
-        const value = Math.round(data.main.temp);
+        const value = Math.round(data.main.temp)+'°C';
         setTemp(value);
-        console.log(data);
       });
   });
   return temp;

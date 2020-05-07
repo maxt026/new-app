@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 
-const Weather = () => {
-  const [weather, setWeather] = useState("");
+const Humidity = () => {
+  const [humidity, setHumidity] = useState("");
 
   useEffect(() => {
     fetch(
@@ -9,11 +9,11 @@ const Weather = () => {
     )
       .then(response => response.json())
       .then(data => {
-        const value = data.weather[0].description;
-        setWeather(value);
+        const value = data.main.humidity + '%';
+        setHumidity(value);
       });
   });
-  return weather;
+  return humidity;
 };
 
-export default Weather;
+export default Humidity;
