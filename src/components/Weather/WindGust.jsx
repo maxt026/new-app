@@ -9,8 +9,7 @@ const WindGust = () => {
     )
       .then(response => response.json())
       .then(data => {
-        const windGust = Math.round(data.wind.gust * 10) / 10 + " m/s";
-
+        const windGust = Math.round(data.wind.gust) + " m/s";
         setWindGust(windGust);
       });
   });

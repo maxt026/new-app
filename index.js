@@ -5,7 +5,7 @@ import Weather from "./src/components/Weather/Weather";
 import Temp from "./src/components/Weather/Temp";
 import Pressure from "./src/components/Weather/Pressure";
 import Humidity from './src/components/Weather/Humidity'
-import WindSp from './src/components/Weather/WindSp'
+import Wind from './src/components/Weather/Wind'
 import WindDir from './src/components/Weather/WindDir'
 import WindGust from './src/components/Weather/WindGust'
 import Clouds from './src/components/Weather/Clouds'
@@ -52,7 +52,7 @@ class App extends Component {
               <div>
                 <div className="channel-property">speed:</div>
                 <div className="result">
-                  <WindSp />
+                  <Wind />
                 </div>
               </div>
               <div>
